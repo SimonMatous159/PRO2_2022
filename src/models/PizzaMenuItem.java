@@ -1,43 +1,43 @@
 package models;
 
 public class PizzaMenuItem {
-    private  int price;
-    private String name;
-    private String description;
 
-    public PizzaMenuItem(int price, String name, String description) {
+    private int price;
+    private String name;
+    private String desc;
+
+    public PizzaMenuItem(int price, String name, String desc) {
         this.price = price;
         this.name = name;
-        this.description = description;
+        this.desc = desc;
     }
 
     public int getPrice() {
         return price;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     @Override
     public String toString() {
-        int price1 = price;
-        return name);
+        return name + "("+price+")";
     }
 }
